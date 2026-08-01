@@ -31,7 +31,7 @@ class Email
 
         $mail->setFrom('noreply@appsalon.com');
         $mail->addAddress('contas@appsalon.com', 'AppSalon.com');
-        $mail->Subject = 'Confirma a tua cuenta';
+        $mail->Subject = 'Confirma a tua conta';
 
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
