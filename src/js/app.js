@@ -274,7 +274,7 @@ function mostrarResumen() {
     const nombreCliente = document.createElement('P');
     nombreCliente.innerHTML = `<span>Nome:</span> ${nombre}`;
 
-    // formtar la fecha en espanol
+    // formtar la fecha em portugues
     const fechaObj = new Date(fecha);
 
     const mes = fechaObj.getMonth();
@@ -283,7 +283,7 @@ function mostrarResumen() {
 
     const fechaUTC = new Date(Date.UTC(year, mes, dia));
     const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
-    const fechaFormateada = fechaUTC.toLocaleDateString('es-MX', opciones);
+    const fechaFormateada = fechaUTC.toLocaleDateString('pt-PT', opciones);
 
     const fechaCita = document.createElement('P');
     fechaCita.innerHTML = `<span>Data:</span> ${fechaFormateada}`;
